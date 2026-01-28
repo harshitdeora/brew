@@ -1,0 +1,119 @@
+.footer {
+  margin-top: 0.8rem;
+}
+
+.line {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(198, 166, 100, 0.9),
+    transparent
+  );
+  opacity: 0.9;
+  margin-bottom: 0.8rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  font-family: var(--font-body);
+}
+
+.brandNote {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 78%, transparent);
+}
+
+.spacer {
+  flex: 1;
+}
+
+.socialGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.45rem;
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--color-text) 80%, transparent);
+  font-size: 0.7rem;
+  text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    transform 140ms ease,
+    color 180ms ease;
+}
+
+.iconButton:hover {
+  background-color: rgba(198, 166, 100, 0.08);
+  transform: translateY(-1px);
+  color: var(--color-text);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  border: 1px solid rgba(198, 166, 100, 0.7);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(198, 166, 100, 0.85);
+}
+
+.circle {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+}
+
+.xShape {
+  width: 10px;
+  height: 10px;
+  position: relative;
+}
+
+.xShape::before,
+.xShape::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  border-bottom: 1px solid currentColor;
+}
+
+.xShape::before {
+  transform: rotate(45deg);
+}
+
+.xShape::after {
+  transform: rotate(-45deg);
+}
+
+.linkedInShape {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.iconLabel {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .iconLabel {
+    display: inline;
+  }
+}
+
+
+

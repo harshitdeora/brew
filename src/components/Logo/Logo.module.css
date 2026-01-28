@@ -1,0 +1,79 @@
+.logoWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.emblem {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(198, 166, 100, 0.7);
+  background: radial-gradient(circle at 30% 0%, #fdf7eb, #c6a664);
+  box-shadow:
+    0 0 0 1px rgba(250, 243, 224, 0.7) inset,
+    0 7px 16px rgba(59, 47, 47, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.emblem::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: inherit;
+  border: 1px solid rgba(250, 243, 224, 0.85);
+  opacity: 0.8;
+}
+
+.emblemInner {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  letter-spacing: 0.14em;
+  color: var(--color-royal-brown);
+  position: relative;
+  z-index: 1;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+}
+
+.brandName {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.tagline {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 76%, transparent);
+}
+
+@media (min-width: 768px) {
+  .emblem {
+    width: 44px;
+    height: 44px;
+  }
+
+  .emblemInner {
+    font-size: 1rem;
+  }
+
+  .brandName {
+    font-size: 1.18rem;
+  }
+}
+
+
+
